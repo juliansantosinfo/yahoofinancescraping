@@ -43,20 +43,17 @@ class YahooFinanceScraping():
 
     def regular_market_price(self):    
         value = self.page.find('fin-streamer', attrs={'data-symbol': f'{self.symbol}', 'data-field': 'regularMarketPrice'}).text
-        self.value_to_decimal(value)
-        return value
+        return self.value_to_decimal(value)
 
 
     def previous_close(self):
         value = self.page.find('td', attrs={'data-test': 'PREV_CLOSE-value'}).text
-        self.value_to_decimal(value)
-        return value
+        return self.value_to_decimal(value)
 
 
     def open_value(self):
         value = self.page.find('td', attrs={'data-test': 'OPEN-value'}).text
-        self.value_to_decimal(value)
-        return value
+        return self.value_to_decimal(value)
 
 
     def days_range(self):
