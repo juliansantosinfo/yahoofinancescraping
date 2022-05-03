@@ -6,7 +6,7 @@ from decimal import Decimal
 from bs4 import BeautifulSoup
 
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 
 class YahooFinanceScraping():
