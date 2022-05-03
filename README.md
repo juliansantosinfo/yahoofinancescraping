@@ -1,4 +1,4 @@
-# fakedadosbr
+# YahooFinanceScraping
 
 **YahooFinanceScraping** is a library to scraping quote data.
 
